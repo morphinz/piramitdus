@@ -1,0 +1,30 @@
+.topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='index.jade')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a#current(href='#') Anasayfa
+                li
+                li
+                  a.sf-with-ul(href='shop.jade') Ürünlerimiz 
+                li
+                  a.sf-with-ul(href='about-2.jade') Hakkımızda
+                // <li><a href="portfolio-single.html" class="sf-with-ul">Single page</a></li>
+                li
+                  a.sf-with-ul(href='checkout.jade') Bayilerimiz
+                li
+                  a.sf-with-ul(href='contact.jade') İletişim

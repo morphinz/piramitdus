@@ -1,0 +1,304 @@
+extends _layout
+block pagecontent
+  body
+  include ./parts/menu
+    section#main
+        // Slider
+        .fullwidthbanner-container.tp-banner-container
+          .fullwidthbanner.rslider.tp-banner
+            ul
+              // THE FIRST SLIDE
+              li(data-transition='fade', data-slotamount='7', data-masterspeed='2000', data-delay='10000', data-saveperformance='on')
+                // MAIN IMAGE
+                img(src='/static/img/dummy.png', alt='laptopmockup_sliderdy', data-lazyload='/static/img/hakkımızda/3.jpg', data-bgposition='right top', data-kenburns='on', data-duration='12000', data-ease='Power0.easeInOut', data-bgfit='120', data-bgfitend='100', data-bgpositionend='center bottom')
+                // LAYERS
+                // LAYER NR. 1
+                .tp-caption.customin.fadeout.rs-parallaxlevel-10(data-x='783', data-y='146', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2700', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 2;')
+                  img(src='/static/img/dummy.png', alt='', data-lazyload='/static/img/redbg_big.png')
+                // LAYER NR. 2
+                .tp-caption.light_heavy_50.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='797', data-y='154', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', dbbata-speed='300', data-start='2850', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | YAZI
+                // LAYER NR. 3
+                .tp-caption.black_heavy_70.skewfromleftshort.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='560', data-y='83', data-speed='500', data-start='2400', data-easing='Power3.easeInOut', data-splitin='chars', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Piramit Duş
+                // LAYER NR. 4
+                .tp-caption.black_bold_40.skewfromrightshort.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='900', data-y='232', data-speed='500', data-start='3200', data-easing='Power3.easeInOut', data-splitin='chars', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Yazı!
+                // LAYER NR. 5
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='300', data-speed='500', data-start='4000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | ESTETİK!
+                // LAYER NR. 6
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='300', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 7
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='306', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 8;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 8
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='340', data-speed='300', data-start='4500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | MODERN!
+                // LAYER NR. 9
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='340', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 10
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='347', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4700', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 11;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 11
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='380', data-speed='300', data-start='5000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | EKONOMİK!
+                // LAYER NR. 12
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='380', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='5000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 13; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 13
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='386', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='5200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 14;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+              // /THE FIRST SLIDE
+              // İKİNCİ SLIDE
+              li(data-transition='fade', data-slotamount='7', data-masterspeed='2000', data-delay='10000', data-saveperformance='on')
+                // MAIN IMAGE
+                img(src='/static/img/dummy.png', alt='laptopmockup_sliderdy', data-lazyload='/static/img/hakkımızda/2.jpg', data-bgposition='right top', data-kenburns='on', data-duration='12000', data-ease='Power0.easeInOut', data-bgfit='120', data-bgfitend='100', data-bgpositionend='center bottom')
+                // LAYERS
+                // LAYER NR. 1
+                .tp-caption.customin.fadeout.rs-parallaxlevel-10(data-x='783', data-y='146', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2700', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 2;')
+                  img(src='/static/img/dummy.png', alt='', data-lazyload='/static/img/redbg_big.png')
+                // LAYER NR. 2
+                .tp-caption.light_heavy_50.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='797', data-y='154', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2850', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Yazı
+                // LAYER NR. 3
+                .tp-caption.black_heavy_70.skewfromleftshort.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='550', data-y='83', data-speed='500', data-start='2400', data-easing='Power3.easeInOut', data-splitin='chars', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Piramit Duş
+                // LAYER NR. 4
+                .tp-caption.black_bold_40.skewfromrightshort.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='900', data-y='232', data-speed='500', data-start='3200', data-easing='Power3.easeInOut', data-splitin='chars', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Yazı!
+                // LAYER NR. 5
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='300', data-speed='300', data-start='4000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Ücretsiz Montaj
+                // LAYER NR. 6
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='300', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 7
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='306', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 8;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 8
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='340', data-speed='300', data-start='4500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Vade farksız Taksit
+                // LAYER NR. 9
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='340', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 10
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='347', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='4700', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 11;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 11
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='933', data-y='380', data-speed='300', data-start='5000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Kalite
+                // LAYER NR. 12
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='902', data-y='380', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='5000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 13; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 13
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='911', data-y='386', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='5200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 14;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+              // üçüncü side
+              li(data-transition='fade', data-slotamount='1', data-masterspeed='300')
+                img(src='/static/img/hakkımızda/5.jpg', data-fullwidthcentering='on', alt='')
+                .caption.large_text.sft(data-x='660', data-y='54', data-speed='300', data-start='800', data-easing='easeOutExpo') Görünüşte Zarafet
+                .caption.medium_text.sfl(data-x='689', data-y='92', data-speed='300', data-start='1100', data-easing='easeOutExpo') ve
+                .caption.large_text.sfr(data-x='738', data-y='88', data-speed='300', data-start='1100', data-easing='easeOutExpo')
+                  span.dblue Mükemmellik.
+                // LAYER NR. 5 1
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='691', data-y='220', data-speed='300', data-start='1000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Eşsiz tasarım
+                // LAYER NR. 6 1
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='660', data-y='220', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='1200', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 7 1
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='669', data-y='225', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='1500', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 8;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 5 1
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='691', data-y='260', data-speed='300', data-start='1500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Kaliteli ve Dayanıklı
+                // LAYER NR. 6 1
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='660', data-y='260', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='1700', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 7 1
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='669', data-y='267', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2000', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 8;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 5
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='691', data-y='300', data-speed='300', data-start='2000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Ekonomik
+                // LAYER NR. 6
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='660', data-y='300', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 7
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='669', data-y='306', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 8;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 8
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='691', data-y='340', data-speed='300', data-start='2500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Ve sizin için tasarlandı.
+                // LAYER NR. 9
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='660', data-y='340', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2500', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 10
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='669', data-y='347', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='2700', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 11;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+                // LAYER NR. 11
+                .tp-caption.black_bold_bg_20.sfr.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='691', data-y='380', data-speed='300', data-start='3000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;')
+                  | Bootstrap Framework
+                // LAYER NR. 12
+                .tp-caption.greenbox30.customin.fadeout.tp-resizeme.rs-parallaxlevel-10(data-x='660', data-y='380', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='3000', data-easing='Power3.easeInOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 13; max-width: auto; max-height: auto; white-space: nowrap;')
+                // LAYER NR. 13
+                .tp-caption.arrowicon.customin.fadeout.rs-parallaxlevel-10(data-x='669', data-y='386', data-customin='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='300', data-start='3200', data-easing='Power3.easeInOut', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300', style='z-index: 14;')
+                  img(src='/static/img/dummy.png', alt='', data-ww='17', data-hh='17', data-lazyload='/static/img/check.png')
+              // üçüncü slide
+        // Slider
+        // Star
+        .star
+          .container
+            .row.text-center
+              .col-md-12.col-md-offset-0
+                .star-divider.margin-top10
+                  .star-divider-icon
+                    i.fa.fa-star
+        // /Star
+        // Main Content
+        .main-content(style='padding-top: 20px;')
+          .container
+            .row
+              .col-lg-4.col-md-4.col-sm-4.wow.swing
+                .content-box.big.ch-item.bottom-pad-small
+                  .ch-info-wrap
+                    .ch-info
+                      .ch-info-front.ch-img-1
+                        i.fa.fa-rocket
+                      .ch-info-back
+                        i.fa.fa-rocket
+                  .content-box-info
+                    h3 Premium Hizmet
+                    p
+                      | Müşterilerimiz bizim için önemlidir, bu nedenle satış öncesi ve sonrası her zaman yanınızdayız.
+                    a(href='#')
+                      | Read More 
+                      i.fa.fa-angle-right
+                      i.fa.fa-angle-right
+                  .border-bottom.margin-top30
+                  .border-bottom
+              .col-lg-4.col-md-4.col-sm-4.wow.swing
+                .content-box.big.ch-item.bottom-pad-small
+                  .ch-info-wrap
+                    .ch-info
+                      .ch-info-front.ch-img-1
+                        i.fa.fa-check
+                      .ch-info-back
+                        i.fa.fa-check
+                  .content-box-info
+                    h3 2 Yıl Garanti
+                    p
+                      | Garanti süresi boyunca oluşabilecek bütün sorunları ücretsiz tamir ediyoruz.
+                    a(href='#')
+                      | Read More 
+                      i.fa.fa-angle-right
+                      i.fa.fa-angle-right
+                  .border-bottom.margin-top30
+                  .border-bottom
+              .col-lg-4.col-md-4.col-sm-4.wow.swing
+                .content-box.big.ch-item
+                  .ch-info-wrap
+                    .ch-info
+                      .ch-info-front.ch-img-1
+                        i.fa.fa-tags
+                      .ch-info-back
+                        i.fa.fa-tags
+                  .content-box-info
+                    h3 Özel Tasarım
+                    p
+                      | Sizin için en uygun ürünü dizayn ediyor ve ücretsiz yerine monte ediyoruz.
+                    a(href='#')
+                      | Read More 
+                      i.fa.fa-angle-right
+                      i.fa.fa-angle-right
+                  .border-bottom.margin-top30
+                  .border-bottom
+        // Star
+        .star
+          .container
+            .row.text-center
+              .col-md-12.col-md-offset-0
+                .star-divider.margin-topminus30
+                  .star-divider-icon
+                    i.fa.fa-star
+        // /Star
+      // /Main Section
+      // Footer
+    footer#footer
+        .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: 5. Cadde, 2. Sokak,
+                        br
+                        |                                                         Maltepe / İstanbul
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-phone.fa-3x
+                      p
+                        strong Telefon:
+                        |  (0216) 111 11 11
+                        br
+                        strong Fax:
+                        |  (0216) 222 22 22
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  support@piramitdus.com
+                        br
+                        strong E-mail:
+                        |  info@piramitdus.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+        // Footer Bottom
+        .footer-bottom
+          .container
+            .row
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                p.credits
+                  | © Copyright 2015 by 
+                  a(href='#') Ozkan GOKSU
+                  | . All Rights Reserved.
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                ul.social.social-icons-footer-bottom
+                  li.facebook
+                    a(href='#', data-toggle='tooltip', title='Facebook')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#', data-toggle='tooltip', title='Twitter')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#', data-toggle='tooltip', title='Dribble')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#', data-toggle='tooltip', title='LinkedIn')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#', data-toggle='tooltip', title='Rss')
+                      i.fa.fa-rss
+        // /Footer Bottom
+    // Scroll To Top
+  a.scrollup(href='#')
+    i.fa.fa-angle-up
+// /Wrap
+// The Scripts

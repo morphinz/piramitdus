@@ -1,0 +1,267 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title Home
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/jquery.bxslider.css')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/orange.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+  body.home
+    .page-mask
+      .page-loader
+        .spinner
+        |                 Loading...
+    // Wrap
+    .wrap
+      // Header
+      header#header
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='/pg/index')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a.sf-with-ul(href='/pg/index') Anasayfa
+                li
+                li
+                  a.sf-with-ul(href='/pg/shop') Ürünlerimiz
+                li
+                  a.sf-with-ul(href='/pg/about-2') Hakkımızda
+                // <li><a href="portfolio-single.html" class="sf-with-ul">Single page</a></li>
+                li
+                  a.sf-with-ul(href='/pg/checkout') Bayilerimiz
+                li
+                  a.sf-with-ul(href='/pg/contact') İletişim
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main.background
+        // Title, Breadcrumb
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Ürünlerimiz
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li Şu anda bu sayfadasınız: :
+                      li
+                        a(href='index') Anasayfa
+                      li
+                        a(href='/pg/shop') Ürünlerimiz
+                      li Ürün inceleme
+        // Main Content
+        .content.margin-top30.margin-bottom0
+          .container(style="width: 827px;")
+            .row
+              // Left Section
+              .posts-block.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                  // Slider
+                  .gallery-image.margin-bottom0
+                    .slider-wrapper.theme-default
+                      ul.bxslider
+                        li
+                          img(src='/static/img/gallery/Katalog1/3.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/4.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/5.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/6.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/7.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/8.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/9.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/10.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/11.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/12.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/13.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/14.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/15.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/16.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/17.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/18.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/19.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/20.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/21.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/22.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/23.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/Katalog1/24.jpg', alt='')
+                    .clearfix
+                    // Slider
+      // Footer
+      footer#footer
+        .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: Gülsuyu Mah. Eski Üsküdar Cad. Cami sk. No:6
+                        br
+                        | Maltepe / İstanbul / Türkiye
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-phone.fa-3x
+                      p                      
+                        strong Telefon:
+                        |  (0216) 589 07 88
+                        br
+                        strong Telefon:
+                        |  (0216) 589 19 55
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  
+                        br
+                        |  piramitdus@hotmail.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+        // Footer Bottom
+        .footer-bottom
+          .container
+            .row
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                p.credits
+                  | © Copyright 2015 by 
+                  a(href='#') Ozkan GOKSU
+                  | . All Rights Reserved.
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                ul.social.social-icons-footer-bottom
+                  li.facebook
+                    a(href='#', data-toggle='tooltip', title='Facebook')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#', data-toggle='tooltip', title='Twitter')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#', data-toggle='tooltip', title='Dribble')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#', data-toggle='tooltip', title='LinkedIn')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#', data-toggle='tooltip', title='Rss')
+                      i.fa.fa-rss
+        // Footer Bottom
+    // Scroll To Top
+    a.scrollup(href='#')
+      i.fa.fa-angle-up
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/jquery.knob.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(src='/static/js/custom.js')

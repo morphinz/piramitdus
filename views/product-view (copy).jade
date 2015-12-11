@@ -1,0 +1,460 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title Home
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/jquery.bxslider.css')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/orange.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+  body.home
+    .page-mask
+      .page-loader
+        .spinner
+        |                 Loading...
+    // Wrap
+    .wrap
+      // Header
+      header#header
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='/pg/index')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a.sf-with-ul(href='/pg/index') Anasayfa
+                li
+                li
+                  a.sf-with-ul(href='/pg/shop') Ürünlerimiz
+                li
+                  a.sf-with-ul(href='/pg/about-2') Hakkımızda
+                // <li><a href="portfolio-single.html" class="sf-with-ul">Single page</a></li>
+                li
+                  a.sf-with-ul(href='/pg/checkout') Bayilerimiz
+                li
+                  a.sf-with-ul(href='/pg/contact') İletişim
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main
+        // Title, Breadcrumb
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Ürünlerimiz
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li Şu anda bu sayfadasınız: :
+                      li
+                        a(href='index') Anasayfa
+                      li
+                        a(href='/pg/shop') Ürünlerimiz
+                      li Ürün inceleme
+        // Title, Breadcrumb        // Main Content
+        .content.margin-top40.margin-bottom40
+          .container
+            .row
+              // Left Section
+              .posts-block.col-lg-8.col-md-8.col-sm-8.col-xs-12
+                // Recent work
+                .recentwork_wrapper
+                  // Slider
+                  .gallery-image
+                    .slider-wrapper.theme-default
+                      ul.bxslider
+                        li
+                          img(src='/static/img/gallery/11.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/12.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/13.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/4.jpg', alt='')
+                        li
+                          img(src='/static/img/gallery/5.jpg', alt='')
+                      #bx-pager
+                        a(data-slide-index='0', href='')
+                          img(src='/static/img/gallery/thumbs/11.jpg', alt='')
+                        a(data-slide-index='1', href='')
+                          img(src='/static/img/gallery/thumbs/12.jpg', alt='')
+                        a(data-slide-index='2', href='')
+                          img(src='/static/img/gallery/thumbs/13.jpg', alt='')
+                        a(data-slide-index='3', href='')
+                          img(src='/static/img/gallery/thumbs/4.jpg', alt='')
+                        a(data-slide-index='4', href='')
+                          img(src='/static/img/gallery/thumbs/5.jpg', alt='')
+                    .clearfix
+                    // /Slider
+                  #urun_baslik  
+                  .post-content.top-pad
+                  #icerik2
+              // /Recent work
+              // Project Summary
+              .col-lg-4.col-md-4.col-sm-4.col-xs-12.sidebar
+                  #urun_adi
+                  br
+                  #icerik
+                // Project Description End
+          // Star
+          .star
+            .container
+              .row.text-center
+                .col-md-6.col-md-offset-3
+                  .star-divider
+                    .star-divider-icon
+                      i.fa.fa-star
+          // Star
+          .row
+            // Recent Work
+            .portfolio
+              .container
+                .row
+                  .portfolio-content
+                    .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                      .portfolio-title.text-center
+                       h3(style='margin-bottom: 0px; margin-top: 0px;') Benzer Ürünler
+                    .col-lg-12.col-md-12.col-sm-12.col-xs-12.no-isotope.portfolio-four-column
+                      .grid(style='padding-top: 20px;')
+                        // Item 1
+                        figure.effect-zoe.portfolio-border.web.jquery.item
+                          a.swap-image(href='1.2')#reklam1
+                            img(src='/static/img/gallery/6.jpg', alt='img1')
+
+                          figcaption
+                            h2
+                              | Creative 
+                              span Zoe
+                        // /Item 1
+                        // Item 2
+                        figure.effect-zoe.portfolio-border.wp.css.item
+                          //a.portfolio-item-link(href='/static/img/portfolio/02.jpg', data-rel='prettyPhoto')
+                          a.swap-image(href='1.3')#reklam2
+                            img(src='/static/img/gallery/5.jpg', alt='img2')
+                          figcaption
+                            h2
+                              | Marchant 
+                              span Mogul
+                        // /Item 2
+                        // Item 3
+                        figure.effect-zoe.portfolio-border.php.jquery.wp.item
+                          a.swap-image(href='1.4')#reklam3
+                            img(src='/static/img/gallery/4.jpg', alt='img3')
+                          figcaption
+                            h2
+                              | Pedaling 
+                              span Tavern
+                        // /Item 3
+                        // Item 4
+                        figure.effect-zoe.portfolio-border.wp.jquery.css.item
+                          a.swap-image(href='1.5')#reklam4
+                            img(src='/static/img/gallery/5.jpg', alt='img4')
+                          figcaption
+                            h2
+                              | Create 
+                              span Smart
+                        // /Item 4
+                      // /grid
+                    .clearfix
+            // /Recent Work
+    // /Main Content
+      // /Main Section
+      // Footer
+      footer#footer
+        .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: 5. Cadde, 2. Sokak,
+                        br
+                        |                                                         Maltepe / İstanbul
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-phone.fa-3x
+                      p
+                        strong Telefon:
+                        |  (0216) 111 11 11
+                        br
+                        strong Fax:
+                        |  (0216) 222 22 22
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  support@piramitdus.com
+                        br
+                        strong E-mail:
+                        |  info@piramitdus.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+        // Footer Bottom
+        .footer-bottom
+          .container
+            .row
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                p.credits
+                  | © Copyright 2015 by 
+                  a(href='#') Ozkan GOKSU
+                  | . All Rights Reserved.
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                ul.social.social-icons-footer-bottom
+                  li.facebook
+                    a(href='#', data-toggle='tooltip', title='Facebook')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#', data-toggle='tooltip', title='Twitter')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#', data-toggle='tooltip', title='Dribble')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#', data-toggle='tooltip', title='LinkedIn')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#', data-toggle='tooltip', title='Rss')
+                      i.fa.fa-rss
+        // /Footer Bottom
+    // Scroll To Top
+    a.scrollup(href='#')
+      i.fa.fa-angle-up
+    // /Wrap
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/jquery.knob.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(src='/static/js/custom.js')
+    ///////////////////Bu kısım ürünlerin gösterim sayfalarındaki bilgilerini içermektedir.
+    script(type="text/javascript").
+      var urunler=[{"id":1.1,"urun_adi":"Çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","bresim":"/static/img/shop/products/large/product-01.jpg","kresim":"/static/img/shop/products/large/product-01.jpg"},
+                    {"id":1.2,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.3,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.4,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.5,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.6,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.7,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.8,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.9,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.10,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.11,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":1.12,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    //KABİNLER
+                    {"id":2.1,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.2,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.3,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.4,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.5,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.6,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.7,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.8,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.9,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.10,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.11,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":2.12,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    //KABİNLER
+                    {"id":3.1,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.2,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.3,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.4,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.5,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.6,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.7,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.8,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.9,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.10,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.11,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":3.12,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    //KABİNLER
+                    {"id":4.1,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.2,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.3,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.4,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.5,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.6,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.7,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.8,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.9,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.10,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.11,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":4.12,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    /////2.sayfa
+                    {"id":13,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":14,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":15,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":16,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":17,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":18,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":19,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":20,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":21,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":22,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":23,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":24,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    /////3.sayfa
+                    {"id":25,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":26,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":27,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":28,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":29,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":30,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":31,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":32,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":33,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":34,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":35,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":36,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    /////4.sayfa
+                    {"id":37,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":38,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":39,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":40,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":41,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":42,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":43,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":44,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":45,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":46,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":47,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":48,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    /////5.sayfa
+                    {"id":49,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":50,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":51,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":52,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":53,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":54,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":55,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":56,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":57,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":58,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":59,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    {"id":60,"urun_adi":"çalışıyor","urun_baslik":"ÇALIŞIYOR","urun_kodu":"çalışıyor","icerik":"çalışıyor","icerik2":"çalışıyor","fiyat":"çalışıyor"},
+                    ];
+      $(document).ready(function(){
+        var us=[];
+        for (var i = 3; i >= 0; i--) {
+          do {
+             var rasgele_sayi=Math.floor((Math.random() * 20) + 1);
+          }
+          while (us.indexOf(rasgele_sayi)>-1);
+          us.push(rasgele_sayi);
+          if(i==0){
+            console.log(us);
+            $("#reklam1").attr("href","1."+us[0]);
+            $("#reklam2").attr("href","2."+us[1]);
+            $("#reklam3").attr("href","3."+us[2]);
+            $("#reklam4").attr("href","4."+us[3]);
+
+          }
+        };
+        
+        var id="!{id}";
+        urunler.forEach(function(data){
+          if(data.id==id){
+            $('#urun_adi').html("").append("<h2>Ürün İsmi: </h2>"+data.urun_adi);
+            $('#urun_baslik').html("").append("<h2></h2>"+data.urun_baslik);
+            $('#urun_kodu').html("").append("<b>Ürün Kodu: </b>" +data.urun_kodu);
+            $('#icerik').html("").append(data.icerik); 
+            $('#icerik2').html("").append(data.icerik2);
+            $('#bresim').html("").append(data.bresim);
+            $('.bresim').attr('src',data.bresim)
+            $('.lresim').attr('data-lens-image',data.lresim)
+          }
+        });
+      });
+          

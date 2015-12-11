@@ -1,0 +1,322 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title PiramitDuş | Bayilerimiz
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/settings.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/extralayers.css', media='screen')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/orange.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    link(rel='apple-touch-icon', href='/static/img/ico/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/static/img/ico/apple-touch-icon-72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/static/img/ico/apple-touch-icon-114.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/static/img/ico/apple-touch-icon-144.png')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+    | s
+    link(rel='stylesheet', type='text/css', href='/static/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='/static/css/jquery.qtip.min.css')
+    style(type='text/css').
+      body{background:#fff;}
+      #map{width:1050px;height:620px;position:relative;margin:auto;}
+      #map svg {position: relative;top: -50px; left: 0px;}
+      svg > a {cursor: pointer;display:block;}
+      #sehir{font-size:40px;text-align:center;margin-top:30px;margin-bottom:-30px;color:#666;}
+  body.home
+    // Wrap
+    .wrap
+      // Header
+      header#header
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='/pg/index')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a.sf-with-ul(href='/pg/index') Anasayfa
+                li
+                li
+                  a.sf-with-ul(href='/pg/shop') Ürünlerimiz 
+                li
+                  a.sf-with-ul(href='/pg/about-2') Hakkımızda
+                li
+                  a#current(href='#') Bayilerimiz
+                li
+                  a.sf-with-ul(href='/pg/contact') İletişim
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Bayilerimiz
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li Şu anda bu sayfadasınız:
+                      li
+                        a(href='/pg/index') Anasayfa
+                      li Bayilerimiz
+        .meet-team.container
+          .row(style='padding-top: 40px;')
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12.meet
+              h2.title-team Bayilerimizi görmek için lütfen haritaya tıklayın.
+              .row.team.margin-top40
+        // Main Co
+        #sehir
+          | &nbsp
+        #map
+        // Main Co
+
+        .content.margin-top0.margin-bottom0
+          .container
+            .row
+              .col-sm-6.col-md-6
+                //button.btn.push-top.push-bottom.btn-color(data-target='#genel', data-toggle='modal')
+                //  | Tüm listeyi görmek için tıklayın
+                #genel.modal.fade
+                  .modal-dialog
+                      .modal-content(style="width: 800px;")
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                          h4.modal-title
+                        .modal-body
+                        .modal-footer
+                          button.btn.btn-default(data-dismiss='modal', type='button') Close
+        // Star
+        .star
+          .container
+            .row.text-center
+              .col-md-12.col-md-offset-0
+                .star-divider.margin-top10
+                  .star-divider-icon
+                    i.fa.fa-star
+        // /Star
+        // Main Content
+        .content.margin-top60.margin-bottom60
+          .container
+            .row
+              // Content
+              .content.col-sm-12.col-md-12
+                // check out steps
+                ul#checkoutsteps.clearfix.panel-group
+                  // Panel
+                  li.panel
+                    a.step-title(href='#step-1', data-parent='#checkoutsteps', data-toggle='collapse')
+                      h6 Bayilik Başvurusu
+                    #step-2.collapse.in
+                      .step-content
+                        form.row
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='İsim', type='text')#isim
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='Soyisim', type='text')#soyisim
+                          .clearfix
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='Firma İsmi', type='text')#firma
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='E-mail Adresiniz', type='text')#email
+                          .clearfix
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='Adresiniz', type='text')#adres
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='İliniz', type='text')#il
+                          .clearfix
+                          .col-sm-6.col-md-6
+                            input.form-control(placeholder='Telefon', type='text')#telefon
+                          .clearfix
+                          .col-sm-12.buttons-box.text-right
+                            button.btn.btn-color(type='button', onclick="mailgonder();") Gönder
+                            span.required
+                              b *
+                              |  All Fields Required
+                  // /Panel
+                // /check out steps
+              // /content
+        // /Main Content
+      // /Main Section
+      // Footer
+      footer#footer
+        .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: 5. Cadde, 2. Sokak,
+                        br
+                        |                                                         Maltepe / İstanbul
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-phone.fa-3x
+                      p
+                        strong Telefon:
+                        |  (0216) 111 11 11
+                        br
+                        strong Fax:
+                        |  (0216) 222 22 22
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='#')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  support@piramitdus.com
+                        br
+                        strong E-mail:
+                        |  info@piramitdus.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+        // Footer Bottom
+        .footer-bottom
+          .container
+            .row
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                p.credits
+                  | © Copyright 2015 by 
+                  a(href='#') Ozkan GOKSU
+                  | . All Rights Reserved.
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                ul.social.social-icons-footer-bottom
+                  li.facebook
+                    a(href='#', data-toggle='tooltip', title='Facebook')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#', data-toggle='tooltip', title='Twitter')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#', data-toggle='tooltip', title='Dribble')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#', data-toggle='tooltip', title='LinkedIn')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#', data-toggle='tooltip', title='Rss')
+                      i.fa.fa-rss
+        // /Footer Bottom
+    // Scroll To Top
+    a.scrollup(href='#')
+      i.fa.fa-angle-up
+    // /Wrap
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(type='text/javascript', src='/static/js/jquery-1.8.0.min.js')
+    script(type='text/javascript', src='/static/js/raphael-min.js')
+    script(type='text/javascript', src='/static/js/paths.js')
+    script(type='text/javascript', src='/static/js/turkiye.js?v=123')
+    script(type='text/javascript', src='/static/js/jquery.qtip.min.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/post.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      });
+      $(function(){
+        $("#map svg path").hover(
+          function() {
+            var id=$(this).attr("id");
+            $("#sehir").text(id);
+          }
+        );      
+      });
+      function mailgonder(){
+        console.log("mailgonderiyoruz");
+      postData("/ajax/mail",{isim:getOValue("isim"), soyadi:getOValue("soyadi"), firma:getOValue("firma"), email:getOValue("email"), il:getOValue("il"), telefon:getOValue("telefon")}, 
+      function(redwall) {
+        if(redwall)
+          alert("Başvurunuz alınmıştır. İlginiz için teşekkür ederiz.");
+        else
+          alert(redwall);
+        })
+      }

@@ -1,0 +1,541 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title Home
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/settings.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/extralayers.css', media='screen')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/orange.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+  body.home
+    .page-mask
+      .page-loader
+        .spinner
+        |                 Loading...
+    // Wrap
+    .wrap
+      // Header
+      header#header
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='/pg/index')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a.sf-with-ul(href='/pg/index') Anasayfa
+                li
+                li
+                   a#current(href='/pg/shop') Ürünlerimiz 
+                li
+                  a.sf-with-ul(href='/pg/about-2') Hakkımızda
+                // <li><a href="portfolio-single.html" class="sf-with-ul">Single page</a></li>
+                li
+                  a.sf-with-ul(href='/pg/checkout') Bayilerimiz
+                li
+                  a.sf-with-ul(href='/pg/contact') İletişim
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Duş Tekneleri
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li Şu anda bu sayfadasınız:
+                      li
+                        a(href='index') Anasayfa
+                      li
+                        a(href='#') Duş Tekneleri
+        // Main Content
+        // Main Content
+        .content.margin-top60.margin-bottom60
+          .container
+            .row
+              .col-md-12
+                .product-grid
+                  .products-block
+                    .row.product-items
+                      // kabinler
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='kabinler')
+                                img.front(src='/static/img/shop/dusakabin.jpg')
+                            // /Swap image
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='kabinler')
+                              em.fa.fa-plus
+                              span Ürünleri Listele
+                          .left
+                          .urunler-mid
+                            h3.name
+                              a(href='product-view', style='padding-top: 10px;') Duş Kabinleri
+                      // kabinler
+                      // tekneler
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='tekneler')
+                                img.front(src='/static/img/shop/tekne.jpg')
+                            // /Swap image
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='tekneler')
+                              em.fa.fa-plus
+                              span Ürünleri Listele
+                          .urunler-mid
+                            h3.name
+                              a(href='product-view', style='padding-top: 10px; color: #FA6900;') Duş Tekneleri
+                      // tekneler
+                      // küvet
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='kuvetler')
+                                img.front(src='/static/img/shop/jakuzi2.jpg')
+                            // /Swap image
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='kuvetler')
+                              em.fa.fa-plus
+                              span Ürünleri Listele
+                          .urunler-mid
+                            h3.name
+                              a(href='product-view', style='padding-top: 10px;') Küvetler
+                      // küvet
+                      // banyo dolabı
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='dolaplar')
+                                img.front(src='/static/img/shop/dolap.jpg')
+                            // /Swap image
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='dolaplar')
+                              em.fa.fa-plus
+                              span Ürünleri Listele
+                          .urunler-mid
+                            h3.name
+                              a(href='product-view', style='padding-top: 10px;') Banyo Dolapları
+                      // banyo dolabı
+                      // Star
+                      .star
+                        .row
+                          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                            .star-divider
+                              .star-divider-icon
+                                i.fa.fa-star
+                      // /Star
+                      // /Sayfa değiştir
+                      .row
+                        .pagination-centered.padding-top10.padding-bottom0
+                          ul.pagination
+                            li.disabled
+                              a(href='#') «
+                            li.active
+                              a(href='#') 1
+                            li
+                              a(href='#') 2
+                            li
+                              a(href='#') 3
+                            li
+                              a(href='#') 4
+                            li
+                              a(href='#') 5
+                            li
+                              a(href='#') »
+                      // /Sayfa değiştir
+
+                      // Product Items *************Listelenen ürünler buradan başlar.
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='product-view/t1')
+                                img.front(src='/static/img/shop/product_01.jpg', title='iPhone 5s 32 GB', alt='iPhone 5s 32 GB')
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t1')                            
+                              em.fa.fa-plus
+                              span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                      // /Product Items
+                      // Product Items
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                        .product-block
+                          .image
+                            span.product-label.product-label-special
+                              span -15%
+                            // Swap image
+                            .flip
+                              a.swap-image(href='product-view/t2')
+                                img.front(src='/static/img/shop/product_02.jpg', title='iPhone 4 16 GB', alt='iPhone 4 16 GB')
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t2')                            
+                              em.fa.fa-plus
+                              span View Product
+                          .left
+                          .product-meta
+                            h3.name
+                              a(href='product-view', style='padding-top: 16px;') Ürün ismi
+                      // /Product Items
+                      // Product Items
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='product-view/t3')
+                                img.front(src='/static/img/shop/product_03.jpg', title='Small TV Box', alt='Small TV Box')
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t3'))
+                              em.fa.fa-plus
+                              span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                      // /Product Items
+                      // Product Items
+                      .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.last
+                        .product-block
+                          .image
+                            // Swap image
+                            .flip
+                              a.swap-image(href='product-view/t4')
+                                img.front(src='/static/img/shop/product_03.jpg', title='Small TV Box', alt='Small TV Box')
+                            a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t4'))
+                              em.fa.fa-plus
+                              span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                  .row.product-items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                      .product-block
+                        .image
+                          span.product-label.product-label-special
+                            span -10%
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t5')
+                              img.front(src='/static/img/shop/product_05.jpg', title='iPhone 5s 16 GB', alt='iPhone 5s 16 GB')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t5'))
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                      .product-block
+                        .image
+                          span.product-label.product-label-special
+                            span -15%
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t6')
+                              img.front(src='/static/img/shop/product_06.jpg', title='Huawei Smart Mobile', alt='Huawei Smart Mobile')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t6'))
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                      .product-block
+                        .image
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t7')
+                              img.front(src='/static/img/shop/product_07.jpg', title='LG G-Flex 16 GB', alt='LG G-Flex 16 GB')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t7'))
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.last
+                      .product-block
+                        .image
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t8')
+                              img.front(src='/static/img/shop/product_08.jpg', title='iMac 27', alt='iMac 27')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t8'))
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // /Product Items
+                  .row.product-items.last
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.first
+                      .product-block
+                        .image
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t9')
+                              img.front(src='/static/img/shop/product_09.jpg', title='Smart TV Box', alt='Smart TV Box')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t9'))
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                      .product-block
+                        .image
+                          span.product-label.product-label-special
+                            span -15%
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t10')
+                              img.front(src='/static/img/shop/product_10.jpg', title='LG Monitor 32 Inch', alt='LG Monitor 32 Inch')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t10')
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols
+                      .product-block
+                        .image
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t11')
+                              img.front(src='/static/img/shop/product_01.jpg', title='iPhone 5s 32 GB', alt='iPhone 5s 32 GB')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t11')
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+                    // Product Items
+                    .col-lg-3.col-md-3.col-sm-3.col-xs-12.product-cols.last
+                      .product-block
+                        .image
+                          span.product-label.product-label-special
+                            span -15%
+                          // Swap image
+                          .flip
+                            a.swap-image(href='product-view/t12')
+                              img.front(src='/static/img/shop/product_02.jpg', title='iPhone 4 16 GB', alt='iPhone 4 16 GB')
+                          a.pav-colorbox.btn.btn-theme-default.cboxElement(href='product-view/t12')
+                            em.fa.fa-plus
+                            span View Product
+                          .left
+                          .product-meta
+                            .price
+                              span.special-price $237.00 yada Yazı
+                    // /Product Items
+          // /Sayfa değiştir
+          .row
+            .pagination-centered.padding-bottom30
+              ul.pagination
+                li.disabled
+                  a(href='#') «
+                li.active
+                  a(href='#1') 1
+                li
+                  a(href='#2') 2
+                li
+                  a(href='#3') 3
+                li
+                  a(href='#4') 4
+                li
+                  a(href='#5') 5
+                li
+                  a(href='#') »
+          // /Sayfa değiştir
+    // /Main Section
+    // Footer
+    footer#footer
+      .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: Gülsuyu Mah. Eski Üsküdar Cad. Cami sk. No:6
+                        br
+                        | Maltepe / İstanbul / Türkiye
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-phone.fa-3x
+                      p                      
+                        strong Telefon:
+                        |  (0216) 589 07 88
+                        br
+                        strong Telefon:
+                        |  (0216) 589 19 55
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  
+                        br
+                        |  piramitdus@hotmail.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+      // Footer Bottom
+      .footer-bottom
+        .container
+          .row
+            .col-lg-6.col-md-6.col-xs-12.col-sm-6
+              p.credits
+                | © Copyright 2015 by 
+                a(href='#') Ozkan GOKSU
+                | . All Rights Reserved.
+            .col-lg-6.col-md-6.col-xs-12.col-sm-6
+              ul.social.social-icons-footer-bottom
+                li.facebook
+                  a(href='#', data-toggle='tooltip', title='Facebook')
+                    i.fa.fa-facebook
+                li.twitter
+                  a(href='#', data-toggle='tooltip', title='Twitter')
+                    i.fa.fa-twitter
+                li.dribbble
+                  a(href='#', data-toggle='tooltip', title='Dribble')
+                    i.fa.fa-dribbble
+                li.linkedin
+                  a(href='#', data-toggle='tooltip', title='LinkedIn')
+                    i.fa.fa-linkedin
+                li.rss
+                  a(href='#', data-toggle='tooltip', title='Rss')
+                    i.fa.fa-rss
+      // /Footer Bottom
+    // Scroll To Top
+    a.scrollup(href='#')
+      i.fa.fa-angle-up
+    // /Wrap
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/jquery.knob.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(src='/static/js/custom.js')
+    script(src='/static/js/simpleGallery/jquery.simpleGallery.js')
+    script(src='/static/js/simpleGallery/jquery.simpleLens.js')
+    script(src='/static/js/product.js')

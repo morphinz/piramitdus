@@ -1,0 +1,14 @@
+{ "name": "jade"
+, "version": "0.0.1"
+, "description" : "piramit"
+, 
+
+"dependencies": {
+    "express"         : "3.4.7",  
+    "jade"            : "0.27.7",
+    "moment"          : "2.4.0",
+    "uwebtools"       : "",
+    "mongoose"        : "*",
+    "nodemailer"	  : "1.3.4"
+  }
+}

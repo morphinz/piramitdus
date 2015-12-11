@@ -1,0 +1,353 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title Piramit Duş
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/settings.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/extralayers.css', media='screen')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/orange.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    link(rel='apple-touch-icon', href='/static/img/ico/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/static/img/ico/apple-touch-icon-72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/static/img/ico/apple-touch-icon-114.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/static/img/ico/apple-touch-icon-144.png')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+  body.home
+    .page-mask
+      .page-loader
+        .spinner
+        |                 Loading...
+    // Wrap
+    .wrap
+      // Header
+      header#header
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='/pg/index')
+                  img.logo-color(src='/static/img/logos/piramit.jpg', alt='gallaxy', width='250', height='70')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a.sf-with-ul(href='/pg/index') Anasayfa
+                li
+                li
+                  a.sf-with-ul(href='/pg/shop') Ürünlerimiz 
+                li
+                  a#current(href='#') Hakkımızda
+                // <li><a href="portfolio-single.html" class="sf-with-ul">Single page</a></li>
+                li
+                  a.sf-with-ul(href='/pg/checkout') Bayilerimiz
+                li
+                  a.sf-with-ul(href='/pg/contact') İletişim
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Hakkımızda
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li Şu anda bu sayfadasınız:
+                      li
+                        a(href='index') Anasayfa
+                      li
+                        a(href='#') Hakkımızda
+        // Main Content
+        .content-about.margin-top25
+          .container
+            .row
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                img(src='/static/img/hakkımızda/12.jpg', alt='about', style=' padding-center: 0px;')
+            .row.padding-top30
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12.welcome-three
+                h2 Web Sayfamıza Hoşgeldiniz.
+                p
+                  | Piramit duş TSEK ve ISO belgeli alüminyum profiller kullanıp, konusunda uzman kadrsu eşliğinde banyo zevkinin konfora dönüştürüldüğü modern tasarımlarıyla üretim yapmaktadır. Başarısında yüksek kalite, koşulsuz müşteri memnuniyeti ve anlayışı yatmaktadır. Yüksek ve esnek üretim teknolojisine ek olarak piramit duşun diğer bir gücü dünya standartları ile uyumlu kaliteli ürünler üretmesidir. Katıldığımız uluslar arası fuarlar ile sizlere daha yakın olmak amacındayız.
+                  br
+                  br
+                  | Türkiyenin en büyük duşakabin firmalarından biri olan Piramit Duş, ülke çapındaki yüzlerce bayisi ile ülkemizin en uç noktalarına ulaşmayı başarmış ve her müşterisinden bir teşekkür almayı ilke edinmiştir.
+                  br
+                  br
+                  | Çalışma azmi ve durmak bilmeyen yenilikçi düşünce yapısı ile Piramit Duş, ülkemiz de yalnızca sivil halkımıza değil devlet idaresindeki konutlara da adını yazdırmayı başarmıştır. Ayrıca ihracat çalışmalarına da aralıksız devam eden firmamız ülkemizi yurtdışında Bulgaristan, Azerbaycan, Moldovya, Kıbrıs, Ermenistan, Bosna - Hersek, Irak ve daha bir çok ülkede gururla temsil etmektedir.
+                  br
+                  br
+                  | Yüzde Yüz yerli sermayeyle tüm dünyada hizmet veren firmamız çalışanlardan müşterisine, bayisinden yatırımcısına herkesi memnun etme politikası ile hem toptan hemde parakende çalışmalarına tüm hızı ile devam etmektedir.
+                  br
+                  br
+                  | Saygılarımızla...
+            // star Start
+            .Star(style='padding-bottom: 20px;')
+              .container
+                .row.text-center
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12(class='style=', padding-left:='', 0px;padding-right:='')
+                    .star-divider
+                      .star-divider-icon
+                        i.fa.fa-star
+            // /Star
+            // Meet The Team
+            .meet-team.container
+              .row(style='padding-top: 10px;')
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12.meet
+                  h2.title-team Ekibimiz İle Tanışın
+                  .row.team.margin-top40
+                    // item 1
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-12.item.animate_afc.d1
+                      .team-member
+                        .team-member-holder
+                          .team-member-image(style="padding-bottom: 260px;")
+                            img(alt='', src='/static/img/team/team-member-1.jpg')
+                          .team-member-meta
+                            h2.team-member-name Adem AKMAN
+                            h1.team-member-role CEO
+                    // /item 1
+                    // item 2
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-12.item.animate_afc.d2
+                      .team-member
+                        .team-member-holder
+                          .team-member-image(style="padding-bottom: 260px;")
+                            img(alt='', src='/static/img/team/team-member-2.jpg')
+                          .team-member-meta
+                            h2.team-member-name Murat AKMAN
+                            h1.team-member-role CMO
+                    // /item 2
+                    // item 3
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-12.item.animate_afc.d3
+                      .team-member
+                        .team-member-holder
+                          .team-member-image(style="padding-bottom: 260px;")
+                            img(alt='', src='/static/img/team/team-member-3.jpg')
+                          .team-member-meta
+                            h2.team-member-name Yakup AKMAN
+                            h1.team-member-role CFO
+                    // /item 4
+            // /Meet The Team
+            // Star
+            .star
+              .container
+                .row.text-center
+                  .col-md-6.col-md-offset-3
+                    .star-divider.margin-topminus30
+                      .star-divider-icon
+                        i.fa.fa-star
+            // /Star
+            // Our Clients
+            .our-clients(style='background-position: 50% 84px;padding-bottom: 10px;padding-top: 15px;')
+              .container
+                .row
+                  .client
+                    .client-logo
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        .text-center
+                          h2 Referanslarımız
+                          h4
+                            | Dünyanın her yerinden, mutlu müşteriler ile oluşturduğumuz referanslarımız.
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        .clearfix
+                        .row.text-center.padding-top40
+                          #client-carousel.client-carousel.slide
+                            .carousel-inner
+                              .item.active
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item.animate_afc.d1
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/5343.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item.animate_afc.d2
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/c.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item.animate_afc.d3
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/03.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item.animate_afc.d4
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/04.jpg')
+                              .item
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/04.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/03.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/c.jpg')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6.item
+                                  .item-inner
+                                    a(href='#')
+                                      img(alt='Upportdash', src='/static/img/clientslogo/5343.jpg')
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        .clients-title
+                          h3.title  
+                          .carousel-controls.pull-right
+                            a.prev(href='#client-carousel', data-slide='prev')
+                              i.fa.fa-angle-left
+                            a.next(href='#client-carousel', data-slide='next')
+                              i.fa.fa-angle-right
+                            .clearfix
+            // /Our Clients
+      // /Main Section
+      // Footer
+      footer#footer
+        .pattern-overlay
+          // Footer Top
+          .footer-top(style='padding-top: 12px;padding-bottom: 15px;')
+            .container
+              .row
+                // Yerlesim
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-map-marker.fa-3x
+                      // end dm-icon-effect-1
+                      p
+                        | Adres: Gülsuyu Mah. Eski Üsküdar Cad. Cami sk. No:6
+                        br
+                        | Maltepe / İstanbul / Türkiye
+                    // end service-icon
+                  // end miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-phone.fa-3x
+                      p                      
+                        strong Telefon:
+                        |  (0216) 589 07 88
+                        br
+                        strong Telefon:
+                        |  (0216) 589 19 55
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+                .col-lg-4.col-sm-4.col-md-6.col-xs-12
+                  .text-center
+                    .wow.swing
+                      .contact-icon
+                        a(href='/pg/contact')
+                          i.fa.fa-envelope-o.fa-3x
+                      p
+                        strong E-mail:
+                        |  
+                        br
+                        |  piramitdus@hotmail.com
+                    // /service-icon
+                  // /miniboxes
+                // /col-lg-4
+              // Contact Details
+        // /Footer Top
+        // Footer Bottom
+        .footer-bottom
+          .container
+            .row
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                p.credits
+                  | © Copyright 2015 by 
+                  a(href='#') Ozkan GOKSU
+                  | . All Rights Reserved.
+              .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                ul.social.social-icons-footer-bottom
+                  li.facebook
+                    a(href='#', data-toggle='tooltip', title='Facebook')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#', data-toggle='tooltip', title='Twitter')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#', data-toggle='tooltip', title='Dribble')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#', data-toggle='tooltip', title='LinkedIn')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#', data-toggle='tooltip', title='Rss')
+                      i.fa.fa-rss
+        // /Footer Bottom
+    // Scroll To Top
+    a.scrollup(href='#')
+      i.fa.fa-angle-up
+    // Wrap End
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(src='/static/js/custom.js')

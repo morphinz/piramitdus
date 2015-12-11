@@ -1,0 +1,753 @@
+doctype html
+//if IE 8
+  html.ie.ie8  
+//if IE 9
+  html.ie.ie9  
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title Icons | Gallaxy Responsive HTML5/CSS3 Template | FIFO THEMES
+    meta(name='description', content='Gallaxy Responsive HTML5/CSS3 Template from FIFOTHEMES.COM')
+    meta(name='author', content='FIFOTHEMES.COM')
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900', rel='stylesheet', type='text/css')
+    // Library CSS
+    link(rel='stylesheet', href='/static/css/bootstrap.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/static/css/fonts/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/animations.css', media='screen')
+    link(rel='stylesheet', href='/static/css/superfish.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/settings.css', media='screen')
+    link(rel='stylesheet', href='/static/css/revolution-slider/css/extralayers.css', media='screen')
+    link(rel='stylesheet', href='/static/css/prettyPhoto.css', media='screen')
+    // Theme CSS
+    link(rel='stylesheet', href='/static/css/style.css')
+    // Skin
+    link.colors(rel='stylesheet', href='/static/css/colors/green.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='/static/css/theme-responsive.css')
+    // Favicons
+    link(rel='shortcut icon', href='/static/img/ico/favicon.ico')
+    link(rel='apple-touch-icon', href='/static/img/ico/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/static/img/ico/apple-touch-icon-72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/static/img/ico/apple-touch-icon-114.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/static/img/ico/apple-touch-icon-144.png')
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/static/js/respond.min.js')
+    //if IE
+      link(rel='stylesheet', href='/static/css/ie.css')
+  body.home
+    .page-mask
+      .page-loader
+        .spinner
+        |                 Loading...
+    // wrap
+    .wrap
+      // Header
+      header#header
+        // Header Top Bar
+        .top-bar
+          .slidedown.collapse
+            .container
+              .pull-left
+                ul.social.pull-left
+                  li.facebook
+                    a(href='#')
+                      i.fa.fa-facebook
+                  li.twitter
+                    a(href='#')
+                      i.fa.fa-twitter
+                  li.dribbble
+                    a(href='#')
+                      i.fa.fa-dribbble
+                  li.linkedin
+                    a(href='#')
+                      i.fa.fa-linkedin
+                  li.rss
+                    a(href='#')
+                      i.fa.fa-rss
+              .phone-login.pull-right
+                a
+                  i.fa.fa-phone
+                  |  Call Us : +880 111-111-111
+                a(href='#', data-toggle='modal', data-target='#loginModal')
+                  i.fa.fa-sign-in
+                  |  Login
+                a(href='#', data-toggle='modal', data-target='#registrationModal')
+                  i.fa.fa-edit
+                  |  Registration
+        // /Header Top Bar
+        // Main Header
+        .main-header
+          .container
+            // TopNav
+            .topnav.navbar-header
+              a.navbar-toggle.down-button(data-toggle='collapse', data-target='.slidedown')
+                i.fa.fa-angle-down.icon-current
+            // /TopNav
+            // Logo
+            .logo.pull-left
+              h1
+                a(href='index.jade')
+                  img.logo-color(src='/static/img/logos/logo_green.png', alt='gallaxy', width='160', height='60')
+            // /Logo
+            // Mobile Menu
+            .mobile.navbar-header
+              a.navbar-toggle(data-toggle='collapse', href='.navbar-collapse')
+                i.fa.fa-bars.fa-2x
+            // /Mobile Menu
+            // Menu Start
+            nav.collapse.navbar-collapse.menu
+              ul.nav.navbar-nav.sf-menu
+                li
+                  a(href='#')
+                    | Home
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='index.jade') Home 
+                    li
+                      a.sf-with-ul(href='index-2.jade') Home 2
+                    li
+                      a.sf-with-ul(href='index-shop.jade') Home Shop
+                li
+                  a#current.sf-with-ul(href='#')
+                    | Features 
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='shortcodes.jade') Shortcodes
+                    li
+                      a.sf-with-ul(href='components.jade') Components
+                    li
+                      a.sf-with-ul(href='icons.jade') Icons
+                    li
+                      a.sf-with-ul(href='columns.jade') Columns
+                    li
+                      a.sf-with-ul(href='pricing-table.jade') Pricing Tables
+                    li
+                      a.sf-with-ul(href='#')
+                        | Third Level Menu 
+                        span.sf-sub-indicator.pull-right
+                          i.fa.fa-angle-right
+                      ul
+                        li
+                          a.sf-with-ul(href='#') Menu Item
+                        li
+                          a.sf-with-ul(href='#') Menu Item
+                        li
+                          a.sf-with-ul(href='#') Menu Item
+                li
+                  a.sf-with-ul(href='#')
+                    | Shop 
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='shop.jade') Products
+                    li
+                      a.sf-with-ul(href='product-view.jade') Product View
+                    li
+                      a.sf-with-ul(href='shoping-cart.jade') Shoping Cart
+                    li
+                      a.sf-with-ul(href='checkout.jade') Proceed to Checkout
+                    li
+                      a.sf-with-ul(href='#')
+                        | My Account
+                        span.sf-sub-indicator.pull-right
+                          i.fa.fa-angle-right
+                      ul
+                        li
+                          a.sf-with-ul(href='my-account.jade') My Account
+                        li
+                          a.sf-with-ul(href='my-account-information.jade') My Account Information
+                        li
+                          a.sf-with-ul(href='my-address.jade') My Address
+                        li
+                          a.sf-with-ul(href='my-orders.jade') My Orders
+                    li
+                      a.sf-with-ul(href='confirmation.jade') Confirmation Page
+                    li
+                      a.sf-with-ul(href='password-recovery.jade') Password Recovery
+                li
+                  a.sf-with-ul(href='#')
+                    | Pages
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='#')
+                        | About
+                        span.sf-sub-indicator.pull-right
+                          i.fa.fa-angle-right
+                      ul
+                        li
+                          a.sf-with-ul(href='about-me.jade') About Me
+                        li
+                          a.sf-with-ul(href='about.jade') About Us
+                        li
+                          a.sf-with-ul(href='about-2.jade') About Us Option
+                    li
+                      a.sf-with-ul(href='#')
+                        | Services
+                        span.sf-sub-indicator.pull-right
+                          i.fa.fa-angle-right
+                      ul
+                        li
+                          a.sf-with-ul(href='services.jade') Services
+                        li
+                          a.sf-with-ul(href='services-2.jade') Services Option
+                    li
+                      a.sf-with-ul(href='testimonials.jade') Testimonials
+                    li
+                      a.sf-with-ul(href='full-width.jade') Full Width Page
+                    li
+                      a.sf-with-ul(href='page-left-sidebar.jade') Left Sidebar
+                    li
+                      a.sf-with-ul(href='page-right-sidebar.jade') Right Sidebar
+                    li
+                      a.sf-with-ul(href='page-left-navigation.jade') Left Navigation
+                    li
+                      a.sf-with-ul(href='page-right-navigation.jade') Right Navigation
+                    li
+                      a.sf-with-ul(href='page-login.jade') Login / Register
+                    li
+                      a.sf-with-ul(href='page-coming-soon.jade') Coming Soon
+                    li
+                      a.sf-with-ul(href='#')
+                        | FAQ
+                        span.sf-sub-indicator.pull-right
+                          i.fa.fa-angle-right
+                      ul
+                        li
+                          a.sf-with-ul(href='faq.jade') FAQ
+                        li
+                          a.sf-with-ul(href='faq-2.jade') FAQ Option
+                    li
+                      a.sf-with-ul(href='page-404.jade') 404 Page
+                    li
+                      a.sf-with-ul(href='sitemap.jade') Sitemap
+                li
+                  a.sf-with-ul(href='#')
+                    | Portfolio
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='portfolio-two.jade') 2 Column
+                    li
+                      a.sf-with-ul(href='portfolio-three.jade') 3 Column
+                    li
+                      a.sf-with-ul(href='portfolio-four.jade') 4 Column
+                    li
+                      a.sf-with-ul(href='portfolio-full-width.jade') Full Width
+                    li
+                      a.sf-with-ul(href='portfolio-single.jade') Single Item Page
+                    li
+                      a.sf-with-ul(href='portfolio-single-big.jade') Single Large Item Page
+                li
+                  a.sf-with-ul(href='#')
+                    | Blog
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='blog-left-sidebar.jade') Left Sidebar Blog
+                    li
+                      a.sf-with-ul(href='blog-right-sidebar.jade') Right Sidebar Blog
+                    li
+                      a.sf-with-ul(href='blog-full-width.jade') Blog Full Width
+                    li
+                      a.sf-with-ul(href='single-post.jade') Single Post
+                li
+                  a(href='#')
+                    | Contact
+                    span.sf-sub-indicator
+                      i.fa.fa-angle-down
+                  ul
+                    li
+                      a.sf-with-ul(href='contact.jade') Contact
+                    li
+                      a.sf-with-ul(href='contact-2.jade') Contact Option
+                    li
+                      a.sf-with-ul(href='contact-3.jade') Contact Option 2
+            // /Menu
+        // /Main Header
+      // /Header
+      // Main Section
+      section#main
+        .breadcrumb-wrapper
+          .pattern-overlay
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  h2.title Icons
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  .breadcrumbs.pull-right
+                    ul
+                      li You are Now on:
+                      li
+                        a(href='index.jade') Home
+                      li
+                        a(href='#') Feaatures
+                      li Icons
+        // Main Content
+        .content.margin-top60.margin-bottom60
+          .container
+            .row
+              .col-lg-12.col-md-12
+                #horizontal-tabs.bottom-4
+                  ul.tabs
+                    li#tab1.current Web Icons
+                    li#tab2 Currency
+                    li#tab3 Directional
+                  // Contents
+                  .contents
+                    #content1.tabscontent
+                      .web-normal
+                        i.fa.fa-adjust.fa-2x
+                        i.fa.fa-anchor.fa-2x
+                        i.fa.fa-archive.fa-2x
+                        i.fa.fa-asterisk.fa-2x
+                        i.fa.fa-ban.fa-2x
+                        i.fa.fa-bar-chart-o.fa-2x
+                        i.fa.fa-barcode.fa-2x
+                        i.fa.fa-flask.fa-2x
+                        i.fa.fa-beer.fa-2x
+                        i.fa.fa-bell.fa-2x
+                        i.fa.fa-bell-o.fa-2x
+                        i.fa.fa-bolt.fa-2x
+                        i.fa.fa-book.fa-2x
+                        i.fa.fa-bookmark.fa-2x
+                        i.fa.fa-bookmark-o.fa-2x
+                        i.fa.fa-briefcase.fa-2x
+                        i.fa.fa-bug.fa-2x
+                        i.fa.fa-building-o.fa-2x
+                        i.fa.fa-bullhorn.fa-2x
+                        i.fa.fa-bullseye.fa-2x
+                        i.fa.fa-calendar.fa-2x
+                        i.fa.fa-calendar-o.fa-2x
+                        i.fa.fa-camera.fa-2x
+                        i.fa.fa-camera-retro.fa-2x
+                        i.fa.fa-certificate.fa-2x
+                        i.fa.fa-square-o.fa-2x
+                        i.fa.fa-minus-square-o.fa-2x
+                        i.fa.fa-check-square.fa-2x
+                        i.fa.fa-check-square-o.fa-2x
+                        i.fa.fa-circle.fa-2x
+                        i.fa.fa-circle-o.fa-2x
+                        i.fa.fa-cloud.fa-2x
+                        i.fa.fa-cloud-download.fa-2x
+                        i.fa.fa-cloud-upload.fa-2x
+                        i.fa.fa-code.fa-2x
+                        i.fa.fa-code-fork.fa-2x
+                        i.fa.fa-coffee.fa-2x
+                        i.fa.fa-cog.fa-2x
+                        i.fa.fa-cogs.fa-2x
+                        i.fa.fa-caret-square-o-down.fa-2x
+                        i.fa.fa-minus-square-o.fa-2x
+                        i.fa.fa-caret-square-o-up.fa-2x
+                        i.fa.fa-comment.fa-2x
+                        i.fa.fa-comment-o.fa-2x
+                        i.fa.fa-comments.fa-2x
+                        i.fa.fa-comments-o.fa-2x
+                        i.fa.fa-compass.fa-2x
+                        i.fa.fa-credit-card.fa-2x
+                        i.fa.fa-crop.fa-2x
+                        i.fa.fa-dashboard.fa-2x
+                        i.fa.fa-desktop.fa-2x
+                        i.fa.fa-arrow-circle-o-down.fa-2x
+                        i.fa.fa-download.fa-2x
+                        i.fa.fa-pencil-square-o.fa-2x
+                        i.fa.fa-pencil-square.fa-2x
+                        i.fa.fa-ellipsis-h.fa-2x
+                        i.fa.fa-ellipsis-v.fa-2x
+                        i.fa.fa-envelope.fa-2x
+                        i.fa.fa-envelope-o.fa-2x
+                        i.fa.fa-eraser.fa-2x
+                        i.fa.fa-exchange.fa-2x
+                        i.fa.fa-exclamation.fa-2x
+                        i.fa.fa-exclamation-circle.fa-2x
+                        i.fa.fa-expand.fa-2x
+                        i.fa.fa-caret-square-o-right.fa-2x
+                        i.fa.fa-external-link.fa-2x
+                        i.fa.fa-external-link-square.fa-2x
+                        i.fa.fa-eye-slash.fa-2x
+                        i.fa.fa-eye.fa-2x
+                        i.fa.fa-video-camera.fa-2x
+                        i.fa.fa-female.fa-2x
+                        i.fa.fa-fighter-jet.fa-2x
+                        i.fa.fa-film.fa-2x
+                        i.fa.fa-filter.fa-2x
+                        i.fa.fa-fire.fa-2x
+                        i.fa.fa-fire-extinguisher.fa-2x
+                        i.fa.fa-flag.fa-2x
+                        i.fa.fa-flag-o.fa-2x
+                        i.fa.fa-flag-checkered.fa-2x
+                        i.fa.fa-folder.fa-2x
+                        i.fa.fa-folder-o.fa-2x
+                        i.fa.fa-folder-open.fa-2x
+                        i.fa.fa-folder-open-o.fa-2x
+                        i.fa.fa-cutlery.fa-2x
+                        i.fa.fa-frown-o.fa-2x
+                        i.fa.fa-gamepad.fa-2x
+                        i.fa.fa-gear.fa-2x
+                        i.fa.fa-gears.fa-2x
+                        i.fa.fa-gift.fa-2x
+                        i.fa.fa-glass.fa-2x
+                        i.fa.fa-globe.fa-2x
+                        i.fa.fa-group.fa-2x
+                        i.fa.fa-hdd-o.fa-2x
+                        i.fa.fa-headphones.fa-2x
+                        i.fa.fa-heart.fa-2x
+                        i.fa.fa-heart-o.fa-2x
+                        i.fa.fa-home.fa-2x
+                        i.fa.fa-inbox.fa-2x
+                        i.fa.fa-info.fa-2x
+                        i.fa.fa-info-circle.fa-2x
+                        i.fa.fa-key.fa-2x
+                        i.fa.fa-keyboard-o.fa-2x
+                        i.fa.fa-laptop.fa-2x
+                        i.fa.fa-leaf.fa-2x
+                        i.fa.fa-legal.fa-2x
+                        i.fa.fa-lemon-o.fa-2x
+                        i.fa.fa-level-down.fa-2x
+                        i.fa.fa-level-up.fa-2x
+                        i.fa.fa-lightbulb-o.fa-2x
+                        i.fa.fa-location-arrow.fa-2x
+                        i.fa.fa-lock.fa-2x
+                        i.fa.fa-magic.fa-2x
+                        i.fa.fa-magnet.fa-2x
+                        i.fa.fa-mail-forward.fa-2x
+                        i.fa.fa-mail-reply.fa-2x
+                        i.fa.fa-mail-reply-all.fa-2x
+                        i.fa.fa-male.fa-2x
+                        i.fa.fa-map-marker.fa-2x
+                        i.fa.fa-meh-o.fa-2x
+                        i.fa.fa-microphone.fa-2x
+                        i.fa.fa-microphone-slash.fa-2x
+                        i.fa.fa-minus.fa-2x
+                        i.fa.fa-minus-circle.fa-2x
+                        i.fa.fa-minus-square.fa-2x
+                        i.fa.fa-mobile-phone.fa-2x
+                        i.fa.fa-money.fa-2x
+                        i.fa.fa-moon-o.fa-2x
+                        i.fa.fa-arrows.fa-2x
+                        i.fa.fa-music.fa-2x
+                        i.fa.fa-power-off.fa-2x
+                        i.fa.fa-check.fa-2x
+                        i.fa.fa-check-circle-o.fa-2x
+                        i.fa.fa-check-circle.fa-2x
+                        i.fa.fa-pencil.fa-2x
+                        i.fa.fa-phone.fa-2x
+                        i.fa.fa-phone-square.fa-2x
+                        i.fa.fa-picture-o.fa-2x
+                        i.fa.fa-plane.fa-2x
+                        i.fa.fa-plus.fa-2x
+                        i.fa.fa-play-circle.fa-2x
+                        i.fa.fa-plus-square.fa-2x
+                        i.fa.fa-power-off.fa-2x
+                        i.fa.fa-print.fa-2x
+                        i.fa.fa-thumb-tack.fa-2x
+                        i.fa.fa-puzzle-piece.fa-2x
+                        i.fa.fa-qrcode.fa-2x
+                        i.fa.fa-question.fa-2x
+                        i.fa.fa-question-circle.fa-2x
+                        i.fa.fa-quote-left.fa-2x
+                        i.fa.fa-quote-right.fa-2x
+                        i.fa.fa-random.fa-2x
+                        i.fa.fa-refresh.fa-2x
+                        i.fa.fa-clock-o.fa-2x
+                        i.fa.fa-bars.fa-2x
+                        i.fa.fa-reply.fa-2x
+                        i.fa.fa-reply-all.fa-2x
+                        i.fa.fa-arrows-h.fa-2x
+                        i.fa.fa-arrows-v.fa-2x
+                        i.fa.fa-retweet.fa-2x
+                        i.fa.fa-road.fa-2x
+                        i.fa.fa-rocket.fa-2x
+                        i.fa.fa-rss.fa-2x
+                        i.fa.fa-rss-square.fa-2x
+                        i.fa.fa-crosshairs.fa-2x
+                        i.fa.fa-search.fa-2x
+                        i.fa.fa-share.fa-2x
+                        i.fa.fa-share-square.fa-2x
+                        i.fa.fa-share-square-o.fa-2x
+                        i.fa.fa-shield.fa-2x
+                        i.fa.fa-shopping-cart.fa-2x
+                        i.fa.fa-square.fa-2x
+                        i.fa.fa-signal.fa-2x
+                        i.fa.fa-sign-in.fa-2x
+                        i.fa.fa-sign-out.fa-2x
+                        i.fa.fa-sitemap.fa-2x
+                        i.fa.fa-smile-o.fa-2x
+                        i.fa.fa-sort.fa-2x
+                        i.fa.fa-sort-alpha-asc.fa-2x
+                        i.fa.fa-sort-alpha-desc.fa-2x
+                        i.fa.fa-sort-amount-asc.fa-2x
+                        i.fa.fa-sort-amount-desc.fa-2x
+                        i.fa.fa-sort-numeric-asc.fa-2x
+                        i.fa.fa-sort-numeric-desc.fa-2x
+                        i.fa.fa-sort-desc.fa-2x
+                        i.fa.fa-sort-asc.fa-2x
+                        i.fa.fa-spinner.fa-2x
+                        i.fa.fa-star.fa-2x
+                        i.fa.fa-star-o.fa-2x
+                        i.fa.fa-star-half.fa-2x
+                        i.fa.fa-star-half-o.fa-2x
+                        i.fa.fa-star-half-full.fa-2x
+                        i.fa.fa-subscript.fa-2x
+                        i.fa.fa-suitcase.fa-2x
+                        i.fa.fa-sun-o.fa-2x
+                        i.fa.fa-superscript.fa-2x
+                        i.fa.fa-tablet.fa-2x
+                        i.fa.fa-tag.fa-2x
+                        i.fa.fa-tags.fa-2x
+                        i.fa.fa-tasks.fa-2x
+                        i.fa.fa-terminal.fa-2x
+                        i.fa.fa-thumbs-down.fa-2x
+                        i.fa.fa-thumbs-o-down.fa-2x
+                        i.fa.fa-thumbs-up.fa-2x
+                        i.fa.fa-thumbs-o-up.fa-2x
+                        i.fa.fa-ticket.fa-2x
+                        i.fa.fa-clock-o.fa-2x
+                        i.fa.fa-tint.fa-2x
+                        i.fa.fa-trash-o.fa-2x
+                        i.fa.fa-trophy.fa-2x
+                        i.fa.fa-truck.fa-2x
+                        i.fa.fa-umbrella.fa-2x
+                        i.fa.fa-unlock.fa-2x
+                        i.fa.fa-unlock-alt.fa-2x
+                        i.fa.fa-upload.fa-2x
+                        i.fa.fa-arrow-circle-o-up.fa-2x
+                        i.fa.fa-user.fa-2x
+                        i.fa.fa-volume-down.fa-2x
+                        i.fa.fa-volume-off.fa-2x
+                        i.fa.fa-volume-up.fa-2x
+                        i.fa.fa-exclamation-triangle.fa-2x
+                        i.fa.fa-wrench.fa-2x
+                        i.fa.fa-search-plus.fa-2x
+                        i.fa.fa-search-minus.fa-2x
+                      // End
+                    #content2.tabscontent(style='display: none;')
+                      .web-normal
+                        i.fa.fa-bitcoin.fa-2x
+                        i.fa.fa-btc.fa-2x
+                        i.fa.fa-cny.fa-2x
+                        i.fa.fa-dollar.fa-2x
+                        i.fa.fa-eur.fa-2x
+                        i.fa.fa-euro.fa-2x
+                        i.fa.fa-gbp.fa-2x
+                        i.fa.fa-inr.fa-2x
+                        i.fa.fa-jpy.fa-2x
+                        i.fa.fa-krw.fa-2x
+                        i.fa.fa-rupee.fa-2x
+                        i.fa.fa-usd.fa-2x
+                        i.fa.fa-won.fa-2x
+                        i.fa.fa-yen.fa-2x
+                      // End
+                    #content3.tabscontent(style='display: none;')
+                      .web-normal
+                        i.fa.fa-angle-down.fa-2x
+                        i.fa.fa-angle-left.fa-2x
+                        i.fa.fa-angle-right.fa-2x
+                        i.fa.fa-angle-up.fa-2x
+                        i.fa.fa-arrow-down.fa-2x
+                        i.fa.fa-arrow-left.fa-2x
+                        i.fa.fa-arrow-right.fa-2x
+                        i.fa.fa-arrow-up.fa-2x
+                        i.fa.fa-caret-down.fa-2x
+                        i.fa.fa-caret-left.fa-2x
+                        i.fa.fa-caret-right.fa-2x
+                        i.fa.fa-caret-up.fa-2x
+                        i.fa.fa-chevron-down.fa-2x
+                        i.fa.fa-chevron-left.fa-2x
+                        i.fa.fa-chevron-right.fa-2x
+                        i.fa.fa-chevron-circle-down.fa-2x
+                        i.fa.fa-chevron-circle-left.fa-2x
+                        i.fa.fa-chevron-circle-right.fa-2x
+                        i.fa.fa-chevron-circle-up.fa-2x
+                        i.fa.fa-chevron-up.fa-2x
+                        i.fa.fa-arrow-circle-down.fa-2x
+                        i.fa.fa-arrow-circle-left.fa-2x
+                        i.fa.fa-arrow-circle-right.fa-2x
+                        i.fa.fa-arrow-circle-up.fa-2x
+                        i.fa.fa-angle-double-down.fa-2x
+                        i.fa.fa-angle-double-left.fa-2x
+                        i.fa.fa-angle-double-right.fa-2x
+                        i.fa.fa-angle-double-up.fa-2x
+                        i.fa.fa-hand-o-down.fa-2x
+                        i.fa.fa-hand-o-left.fa-2x
+                        i.fa.fa-hand-o-right.fa-2x
+                        i.fa.fa-hand-o-up.fa-2x
+                        i.fa.fa-long-arrow-down.fa-2x
+                        i.fa.fa-long-arrow-left.fa-2x
+                        i.fa.fa-long-arrow-right.fa-2x
+                        i.fa.fa-long-arrow-up.fa-2x
+                  // /contents
+        // /Main Content
+      // Footer
+      footer#footer
+        .pattern-overlay
+          // Footer Top Start
+          .footer-top
+            .container
+              .row
+                section.col-lg-3.col-md-3.col-xs-12.col-sm-3.footer-one
+                  h3.light About
+                  p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                section.col-lg-3.col-md-3.col-xs-12.col-sm-3.footer-two
+                  h3.light Twitter Stream
+                  ul#tweets
+                section.col-lg-3.col-md-3.col-xs-12.col-sm-3.footer-three
+                  h3.light Contact Us
+                  ul.contact-us
+                    li
+                      i.fa.fa-map-marker
+                      p
+                        strong.contact-pad Address:
+                        |  House: 325, Road: 2,
+                        br
+                        |  Mirpur DOHS 
+                        br
+                        |                                                 Dhaka, Bangladesh
+                    li
+                      i.fa.fa-phone
+                      p
+                        strong Phone:
+                        |  +880 111-111-111
+                    li
+                      i.fa.fa-envelope
+                      p
+                        strong Email:
+                        a(href='mailto:support@fifothemes.com') support@fifothemes.com
+                section.col-lg-3.col-md-3.col-xs-12.col-sm-3.footer-four
+                  h3.light Subscribe
+                  p
+                    | Subscribe to our email newsletter to receive our news, updates and awesome free files.
+                  form(method='get', action='#')
+                    .input-group
+                      input.subscribe.form-control(type='text', value='mail@example.com', onfocus="if(this.value=='mail@example.com')this.value='';", onblur="if(this.value=='')this.value='mail@example.com';")
+                      span.input-group-btn
+                        button.btn.subscribe-btn(type='button') Join
+                    // /input-group
+          // /Footer Top
+          // Footer Bottom
+          .footer-bottom
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  p.credits
+                    | © Copyright 2014 by 
+                    a(href='#') FIFOLAB
+                    | . All Rights Reserved.
+                .col-lg-6.col-md-6.col-xs-12.col-sm-6
+                  ul.social.social-icons-footer-bottom
+                    li.facebook
+                      a(href='#', data-toggle='tooltip', title='Facebook')
+                        i.fa.fa-facebook
+                    li.twitter
+                      a(href='#', data-toggle='tooltip', title='Twitter')
+                        i.fa.fa-twitter
+                    li.dribbble
+                      a(href='#', data-toggle='tooltip', title='Dribble')
+                        i.fa.fa-dribbble
+                    li.linkedin
+                      a(href='#', data-toggle='tooltip', title='LinkedIn')
+                        i.fa.fa-linkedin
+                    li.rss
+                      a(href='#', data-toggle='tooltip', title='Rss')
+                        i.fa.fa-rss
+          // /Footer Bottom
+      // /Footer
+      // Modal
+      section#modals
+        // Login Modal
+        #loginModal.modal.login.fade(tabindex='-1', role='dialog', aria-labelledby='loginModal', aria-hidden='true')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                h2#loginModalLabel.form-signin-heading.modal-title Login
+              form#login(method='post')
+                .modal-body
+                  fieldset
+                    .row
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        input#username.form-control(name='username', type='text', placeholder='Username', value='', required='')
+                    .row
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        input#email.form-control(type='email', name='email', placeholder='Email', value='', required='')
+                .modal-footer
+                  a.pull-left(href='password-recovery.jade') (Lost Password?)
+                  button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  button.btn.btn-color(type='button') Login
+        // /Login Modal
+        // Registration Modal
+        #registrationModal.modal.register.fade(tabindex='-1', role='dialog', aria-labelledby='registrationModal', aria-hidden='true')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                h2#registrationModalLabel.form-signin-heading.modal-title Create a new account
+              form#registration(method='post')
+                .modal-body
+                  .row
+                    .form-group
+                      .col-md-6
+                        input.form-control(type='text', value='', placeholder='First Name')
+                      .col-md-6
+                        input.form-control(type='text', value='', placeholder='Last Name')
+                  .row
+                    .form-group
+                      .col-md-12
+                        input.form-control(type='text', value='', placeholder='E-mail Address')
+                  .row
+                    .form-group
+                      .col-md-6
+                        input.form-control(type='password', value='', placeholder='Password')
+                      .col-md-6
+                        input.form-control(type='password', value='', placeholder='Re-enter Password')
+                .modal-footer
+                  button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  button.btn.btn-color(type='button') Register
+        // /Registration Modal
+      // /Modal
+      // Scroll To Top
+      a.scrollup(href='#')
+        i.fa.fa-angle-up
+    // Wrap End
+    // The Scripts
+    script(src='/static/js/jquery.min.js')
+    script(src='/static/js/jquery-migrate-1.0.0.js')
+    script(src='/static/js/jquery-ui.js')
+    script(src='/static/js/bootstrap.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.plugins.min.js')
+    script(src='/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js')
+    script(src='/static/js/jquery.parallax.js')
+    script(src='/static/js/jquery.wait.js')
+    script(src='/static/js/fappear.js')
+    script(src='/static/js/modernizr-2.6.2.min.js')
+    script(src='/static/js/jquery.bxslider.min.js')
+    script(src='/static/js/jquery.prettyPhoto.js')
+    script(src='/static/js/superfish.js')
+    script(src='/static/js/tweetMachine.js')
+    script(src='/static/js/tytabs.js')
+    script(src='/static/js/jquery.gmap.min.js')
+    script(src='/static/js/jquery.sticky.js')
+    script(src='/static/js/jquery.countTo.js')
+    script(src='/static/js/jflickrfeed.js')
+    script(src='/static/js/jquery.knob.js')
+    script(src='/static/js/imagesloaded.pkgd.min.js')
+    script(src='/static/js/waypoints.min.js')
+    script(src='/static/js/wow.js')
+    script(src='/static/js/jquery.fitvids.js')
+    script(src='/static/js/custom.js')
